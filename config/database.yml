@@ -11,22 +11,22 @@ default: &default
 development:
   primary:
     <<: *default
-    database: emart_reactrailsApi__production
+    database: emart_reactrailsApi
 
 test:
   <<: *default
-  database: emart_reactrailsApi__production
+  database: emart_reactrailsApi
   username: root
   password: root
 
 staging:
   <<: *default
-  database: emart_reactrailsApi__production
+  database: emart_reactrailsApi
   username: root
   password: root
 
 production:
   <<: *default
-  database: emart_reactrailsApi__production
+  database: emart_reactrailsApi
   username: root
   password: root

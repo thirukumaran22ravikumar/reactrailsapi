@@ -25,6 +25,15 @@ class Api::V1::UserController < ApplicationController
         data.update(name: params[:user]["name"].to_s,email: params[:user]["email"].to_s,role: params[:user]["role"].to_s)
         render  json: data
     end
-
+    def createProduct
+        @product = Product.new
+        @product.product_name = params[:product_name]
+        puts "0000000"
+        @product.rate = params[:rate]
+        @product.details = params[:details]
+        puts "0000000------111"
+        @product.image = params[:image]
+        @product.save
+    end
 
 end

@@ -6,6 +6,8 @@ Rails.application.routes.draw do
       get 'getUser',  to: 'user#show'
       delete 'deleteUser/:id', to: 'user#delete'
       put 'update/:id', to: 'user#update'
+      post 'createProduct',  to: 'user#createProduct'
+      # get 'uploads', to: 'user#show_image'
     end
   end
   
